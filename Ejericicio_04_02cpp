@@ -1,0 +1,23 @@
+// Materia: Programación I, Paralelo 1
+// Autor: Mateo Enrique Gutierrez
+// Fecha creación: 12/09/2024
+// Número de ejercicio: 2
+// Problema planteado: Introducir y mostrar valores en un arreglo.
+
+#include <iostream>
+#include <iomanip>
+#include <vector>
+using namespace std;
+
+int main() {
+    // Declarar el vector de voltios
+    vector<double> voltios = {11.95, 16.32, 12.15, 8.22, 15.98, 26.22, 13.54, 6.45, 17.59};
+
+    // Mostrar los valores en el formato solicitado
+    for (size_t i = 0; i < voltios.size(); i++) {
+        cout << fixed << setprecision(2) << voltios[i] << " ";
+        if ((i + 1) % 3 == 0) cout << endl; // Salto de línea cada 3 elementos
+    }
+
+    return 0;
+}
